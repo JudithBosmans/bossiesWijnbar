@@ -1,0 +1,80 @@
+* {
+  font-family: Switzer, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+body {
+  background-color: #e2d9cb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; /* To prevent horizontal overflow */
+}
+
+.logo {
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%, -50%);
+  color: #676c4d;
+
+  font-size: 24px;
+  font-weight: 900;
+
+  font-family: Switzer, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  position: absolute;
+  position: fixed;
+}
+
+.titleUp,
+.titleDown {
+  color: #676c4d;
+  font-size: 64px;
+  font-weight: 900;
+
+  white-space: nowrap;
+  position: absolute;
+  width: min-content;
+  height: min-content;
+}
+
+.titleUp {
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.titleDown {
+  left: 50%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.titleText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+.buttonContact {
+  position: absolute;
+  left: calc(50% - 0.5px);
+  top: 58%;
+  padding: 10px 20px;
+
+  color: #676c4d;
+  outline: solid 1px #676c4d;
+  outline-offset: -1px;
+  border-radius: 18px;
+  transform: translateX(-50%);
+  text-decoration: none;
+}
