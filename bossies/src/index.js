@@ -2,9 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import "../src/routes/App.css";
-import App from "./routes/App";
-import Contact from "./routes/Contact";
+import "../src/App.css";
+import App from "./App.js";
+import About from "./routes/About.js";
+import Qa from "./routes/Qa.js";
+import Contact from "./routes/Contact.js";
+import WineBottle from "./routes/WineBottle.js";
 
 const router = createBrowserRouter([
   {
@@ -12,10 +15,30 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
-        element: <Contact />,
+        path: "/about",
+        element: <About />,
       },
     ],
+  },
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/Qa",
+    element: <Qa />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/wineBottle",
+    element: <WineBottle />,
   },
 ]);
 
