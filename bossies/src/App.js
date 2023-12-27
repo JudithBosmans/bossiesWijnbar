@@ -18,6 +18,7 @@ const App = () => {
     <div>
       <Nav />
       <img
+        src="https://i.ibb.co/NSHDZR2/logo-wijnbar-zonder-Cirkel.png"
         alt="Logo"
         className="absolute top-0 left-1/2 transform -translate-x-1/2 max-w-[100px] p-3 md:left-0 md:transform-none"
       />
