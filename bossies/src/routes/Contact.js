@@ -6,13 +6,15 @@ const Contact = () => {
     <div className="max-w-10xl mx-auto pt-40">
       <div className="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
         <div className="flex flex-col items-center">
-          <h2 className="font-bold text-5xl mt-5 tracking-tight">Contact</h2>
+          <h2 className="font-bold text-5xl mt-5 tracking-tight text-green">
+            Contact
+          </h2>
           <p className="text-neutral-500 text-xl mt-3">
             Zit je met een vraag of wil je gewoon eens onze socials bekijken?
             Twijfel niet!
           </p>
         </div>
-        <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 mt-20">
+        <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 mt-20 text-green">
           <Card
             title="@Bossies_Wijbar"
             subtitle="Bekijk onze instagram pagina!"

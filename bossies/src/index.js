@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import "../src/App.css";
 import App from "./App.js";
 import About from "./routes/About.js";
 import Qa from "./routes/Qa.js";

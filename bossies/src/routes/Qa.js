@@ -26,7 +26,9 @@ const QA = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
       <div className="flex flex-col items-center">
-        <h2 className="font-bold text-5xl mt-5 tracking-tight">FAQ</h2>
+        <h2 className="font-black text-5xl mt-5 tracking-tight text-green">
+          FAQ
+        </h2>
         <p className="text-neutral-500 text-xl mt-3">
           Frequently asked questions.
         </p>

@@ -11,20 +11,25 @@ const About = () => {
 
           {/* The first column is for the text and the button */}
           <div>
-            <h3 className="text-4xl md:text-6xl font-semibold">
+            <h3 className="text-4xl md:text-6xl text-green font-black">
               Hey, wij zijn Kjell & Judith!
             </h3>
-            <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
-              nobis in error repellat voluptatibus ad.Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Nam nobis in error repellat
-              voluptatibus ad.
+            <p className="text-base md:text-lg text-slate-700 my-4 md:my-6 font-regular">
+              Welkom bij Bossies Wijnbar, de place to be voor elke
+              wijnliefhebber. Opgericht door een vader-dochter duo, brengen we
+              een unieke combinatie van diepgaande wijnkennis en een gezellige
+              sfeer.
             </p>
-            <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
-              nobis in error repellat voluptatibus ad.Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Nam nobis in error repellat
-              voluptatibus ad.
+            <p className="text-base md:text-lg text-slate-700 my-4 md:my-6 font-regular">
+              Mijn vader, met zijn levenslange passie voor wijn, selecteert elke
+              fles in ons assortiment met zorg en expertise. Zijn kennis maakt
+              elk bezoek aan onze bar een ontdekkingsreis, aangezien er altijd
+              nieuwe wijntjes te vinden zijn.
+              <br></br> <br></br>
+              Ik, zijn dochter, breng de wijnbar online tot leven. Hoewel mijn
+              wijnkennis misschien niet zo diepgaand is, deel ik de passie voor
+              goede wijn en zorg ik ervoor dat onze digitale aanwezigheid net zo
+              warm en uitnodigend is als onze bar.
             </p>
             <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
               Find a class
