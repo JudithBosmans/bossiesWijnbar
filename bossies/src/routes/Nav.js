@@ -18,14 +18,10 @@ export default function Nav() {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="relative mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            {" "}
-            {/* Make the container relative */}
-            <div className="flex h-16 items-center justify-between">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div className="flex h-16 items-center justify-center">
               {/* Mobile menu button */}
               <div className="absolute top-0 left-0 z-30 flex items-center sm:hidden">
-                {" "}
-                {/* Adjust positioning */}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -36,25 +32,8 @@ export default function Nav() {
                 </Disclosure.Button>
               </div>
 
-              {/* Logo (center on mobile) */}
-              <div className="flex-1 flex items-center justify-center sm:justify-start">
-                {" "}
-                {/* Adjust flex properties */}
-                <div className="flex-shrink-0 mx-auto sm:mx-0">
-                  {" "}
-                  {/* Center on mobile */}
-                  <a href="https://ibb.co/dgzCGZ4">
-                    <img
-                      src="https://i.ibb.co/NSHDZR2/logo-wijnbar-zonder-Cirkel.png"
-                      alt="logo-wijnbar-zonder-Cirkel"
-                      className="h-12 w-auto"
-                    />
-                  </a>
-                </div>
-              </div>
-
               {/* Centered Navigation Links */}
-              <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-center">
+              <div className="hidden sm:flex flex-1 items-center justify-center">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
                     <a

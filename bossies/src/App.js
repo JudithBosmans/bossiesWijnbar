@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import "./App.css";
 
 import About from "./routes/About.js";
 import Qa from "./routes/Qa.js";
@@ -16,6 +17,10 @@ const App = () => {
   return (
     <div>
       <Nav />
+      <img
+        alt="Logo"
+        className="absolute top-0 left-1/2 transform -translate-x-1/2 max-w-[100px] p-3 md:left-0 md:transform-none"
+      />
       <div
         id="home"
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20 lg:py-40"
