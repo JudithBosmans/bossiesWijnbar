@@ -7,6 +7,12 @@ import Contact from "./routes/Contact.js";
 import Nav from "./routes/Nav.js";
 
 const App = () => {
+  const contactRef = useRef(null);
+
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
       <Nav />
@@ -27,7 +33,7 @@ const App = () => {
               iets weten!
             </p>
             <button
-              href="/contact"
+              onClick={scrollToContact} // Step 2: Modify button to use onClick
               className="bg-green text-white font-medium py-2 px-4 rounded transition-all hover:bg-darkGreen active:scale-95"
             >
               Contact
@@ -41,7 +47,7 @@ const App = () => {
         <div id="qa">
           <Qa />
         </div>
-        <div id="contact">
+        <div id="contact" ref={contactRef}>
           <Contact />
         </div>
       </div>

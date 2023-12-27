@@ -18,25 +18,25 @@ const Contact = () => {
           <Card
             title="@Bossies_Wijbar"
             subtitle="Bekijk onze instagram pagina!"
-            href="#"
+            href="https://www.instagram.com/bossies_wijnbar/"
             Icon={FiInstagram}
           />
           <Card
             title="@Kjell Bosmans"
             subtitle="Bekijk onze facebook pagina!"
-            href="#"
+            href="https://www.facebook.com/kjell.bosmans?locale=nl_NL"
             Icon={FiFacebook}
           />
           <Card
             title="+0494 36 42 61"
             subtitle="Stuur een berichtje of bel!"
-            href="#"
+            href="tel:0494364261"
             Icon={FiPhone}
           />
           <Card
             title="KjellBosmans@gmail.com"
             subtitle="Stuur gerust een mail!"
-            href="#"
+            href="mailto:KjellBosmans@gmail.com"
             Icon={FiMail}
           />
         </div>
