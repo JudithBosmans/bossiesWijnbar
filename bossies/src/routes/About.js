@@ -3,41 +3,40 @@ import { useEffect, useRef, useState } from "react";
 
 const About = () => {
   return (
-    <div>
-      <div className="max-w-10xl mx-auto py-80">
-        {/* Use a grid layout to split the sections into two columns */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-60 w-full mb-8">
+    <div className="mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      {/* Responsive grid layout */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-8">
+        {/* ShuffleGrid - adjust width and height for responsiveness */}
+        <div className="flex justify-center items-center mb-8 md:mb-0">
           <ShuffleGrid />
+        </div>
 
-          {/* The first column is for the text and the button */}
-          <div>
-            <h3 className="text-4xl md:text-6xl text-green font-black">
-              Hey, wij zijn Kjell & Judith!
-            </h3>
-            <p className="text-base md:text-lg text-slate-700 my-4 md:my-6 font-regular">
-              Welkom bij Bossies Wijnbar, de place to be voor elke
-              wijnliefhebber. Opgericht door een vader-dochter duo, brengen we
-              een unieke combinatie van diepgaande wijnkennis en een gezellige
-              sfeer.
-            </p>
-            <p className="text-base md:text-lg text-slate-700 my-4 md:my-6 font-regular">
-              Mijn vader, met zijn levenslange passie voor wijn, selecteert elke
-              fles in ons assortiment met zorg en expertise. Zijn kennis maakt
-              elk bezoek aan onze bar een ontdekkingsreis, aangezien er altijd
-              nieuwe wijntjes te vinden zijn.
-              <br></br> <br></br>
-              Ik, zijn dochter, breng de wijnbar online tot leven. Hoewel mijn
-              wijnkennis misschien niet zo diepgaand is, deel ik de passie voor
-              goede wijn en zorg ik ervoor dat onze digitale aanwezigheid net zo
-              warm en uitnodigend is als onze bar.
-            </p>
-            <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
-              Find a class
-            </button>
-          </div>
-          {/* The second column is for the ShuffleGrid */}
-        </section>
-      </div>
+        {/* Text and button section - centered on small screens */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <h3 className="text-3xl md:text-4xl lg:text-6xl text-green font-black mb-4">
+            Hey, wij zijn Kjell & Judith!
+          </h3>
+          <p className="text-sm md:text-base lg:text-lg text-slate-700 mb-4">
+            Welkom bij Bossies Wijnbar, de place to be voor elke wijnliefhebber.
+            Opgericht door een vader-dochter duo, brengen we een unieke
+            combinatie van diepgaande wijnkennis en een gezellige sfeer.
+            <br></br> <br></br>
+            Mijn vader, met zijn levenslange passie voor wijn, selecteert elke
+            fles in ons assortiment met zorg en expertise. Zijn kennis maakt elk
+            bezoek aan onze bar een ontdekkingsreis, aangezien er altijd nieuwe
+            wijntjes te vinden zijn.
+            <br></br> <br></br>
+            Ik, zijn dochter, breng de wijnbar online tot leven. Hoewel mijn
+            wijnkennis misschien niet zo diepgaand is, deel ik de passie voor
+            goede wijn en zorg ik ervoor dat onze digitale aanwezigheid net zo
+            warm en uitnodigend is als onze bar.
+          </p>
+          {/* Additional paragraphs and button */}
+          <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
+            Find a class
+          </button>
+        </div>
+      </section>
     </div>
   );
 };
@@ -186,8 +185,8 @@ const ShuffleGrid = () => {
   };
 
   return (
-    <div>
-      <div className="grid grid-cols-3 grid-rows-3 w-[550px] h-[600px] gap-5">
+    <div className="w-full max-w-md mx-auto">
+      <div className="grid grid-cols-3 grid-rows-3 w-full h-[300px] sm:h-[450px] md:h-[600px] gap-2 sm:gap-3 md:gap-5">
         {squares.map((sq) => sq)}
       </div>
     </div>

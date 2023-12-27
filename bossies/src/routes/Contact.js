@@ -9,7 +9,7 @@ const Contact = () => {
           <h2 className="font-bold text-5xl mt-5 tracking-tight text-green">
             Contact
           </h2>
-          <p className="text-neutral-500 text-xl mt-3">
+          <p className="text-neutral-500 text-xl mt-3 flex justify-center items-center">
             Zit je met een vraag of wil je gewoon eens onze socials bekijken?
             Twijfel niet!
           </p>

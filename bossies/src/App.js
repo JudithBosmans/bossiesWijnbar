@@ -4,16 +4,18 @@ import { useEffect, useRef, useState } from "react";
 import About from "./routes/About.js";
 import Qa from "./routes/Qa.js";
 import Contact from "./routes/Contact.js";
+import Nav from "./routes/Nav.js";
 
 const App = () => {
   return (
     <div>
-      {/* Adjust the padding for different screen sizes */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-40 lg:py-80">
-        {/* Responsive grid layout with centered content on smaller screens */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-10 w-full mb-8 text-center md:text-left">
-          <div className="flex flex-col items-center md:items-start">
-            {/* Responsive text sizing with centered alignment on smaller screens */}
+      <Nav />
+      <div
+        id="home"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20 lg:py-40"
+      >
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-10 w-full mb-8">
+          <div className="flex flex-col items-center justify-center text-center md:items-start md:text-left">
             <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-9xl font-black text-black mb-4">
               Bossies Wijnbar
             </h3>
@@ -24,15 +26,24 @@ const App = () => {
               Iets komen drinken, afhalen, of de zaal afhuren? Laat ons gerust
               iets weten!
             </p>
-            <button className="bg-green text-white font-medium py-2 px-4 rounded transition-all hover:bg-darkGreen active:scale-95">
+            <button
+              href="/contact"
+              className="bg-green text-white font-medium py-2 px-4 rounded transition-all hover:bg-darkGreen active:scale-95"
+            >
               Contact
             </button>
           </div>
           {/* The second column can be used for additional content or images */}
         </section>
-        <About />
-        <Qa />
-        <Contact />
+        <div id="about">
+          <About />
+        </div>
+        <div id="qa">
+          <Qa />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
       </div>
     </div>
   );

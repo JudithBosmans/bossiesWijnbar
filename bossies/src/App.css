@@ -6,3 +6,7 @@ body {
   background-color: #f5e8d4;
   font-family: "Switzer", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}

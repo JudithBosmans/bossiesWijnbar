@@ -7,6 +7,7 @@ import About from "./routes/About.js";
 import Qa from "./routes/Qa.js";
 import Contact from "./routes/Contact.js";
 import WineBottle from "./routes/WineBottle.js";
+import Nav from "./routes/Nav.js";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/nav",
+    element: <Nav />,
   },
   {
     path: "/wineBottle",
